@@ -1,0 +1,7 @@
+{
+  "id": "git",
+  "nome": "Git",
+  "categoria": "Desenvolvimento",
+  "wingetId": "Git.Git",
+  "githubRepo": "git-for-windows/git"
+}

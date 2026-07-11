@@ -1,0 +1,7 @@
+{
+  "id": "python",
+  "nome": "Python",
+  "categoria": "Desenvolvimento",
+  "wingetId": "Python.Python.3.12",
+  "githubRepo": "python/cpython"
+}

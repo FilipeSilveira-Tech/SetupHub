@@ -1,0 +1,7 @@
+{
+  "id": "epic",
+  "nome": "Epic Games Launcher",
+  "categoria": "Jogos",
+  "wingetId": "EpicGames.EpicGamesLauncher",
+  "githubRepo": null
+}

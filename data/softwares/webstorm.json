@@ -1,0 +1,7 @@
+{
+  "id": "webstorm",
+  "nome": "WebStorm",
+  "categoria": "IDEs",
+  "wingetId": "JetBrains.WebStorm",
+  "githubRepo": null
+}

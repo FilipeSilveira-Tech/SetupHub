@@ -1,0 +1,7 @@
+{
+  "id": "chrome",
+  "nome": "Google Chrome",
+  "categoria": "Navegadores",
+  "wingetId": "Google.Chrome",
+  "githubRepo": null
+}

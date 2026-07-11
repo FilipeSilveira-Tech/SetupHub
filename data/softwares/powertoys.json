@@ -1,0 +1,7 @@
+{
+  "id": "powertoys",
+  "nome": "Microsoft PowerToys",
+  "categoria": "Produtividade",
+  "wingetId": "Microsoft.PowerToys",
+  "githubRepo": "microsoft/PowerToys"
+}

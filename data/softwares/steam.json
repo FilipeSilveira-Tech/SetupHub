@@ -1,0 +1,7 @@
+{
+  "id": "steam",
+  "nome": "Steam",
+  "categoria": "Jogos",
+  "wingetId": "Valve.Steam",
+  "githubRepo": null
+}

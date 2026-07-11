@@ -1,0 +1,7 @@
+{
+  "id": "pycharm",
+  "nome": "PyCharm Community",
+  "categoria": "IDEs",
+  "wingetId": "JetBrains.PyCharm.Community",
+  "githubRepo": null
+}

@@ -1,0 +1,7 @@
+{
+  "id": "keepassxc",
+  "nome": "KeePassXC",
+  "categoria": "Segurança",
+  "wingetId": "KeePassXC.KeePassXC",
+  "githubRepo": "keepassxreboot/keepassxc"
+}

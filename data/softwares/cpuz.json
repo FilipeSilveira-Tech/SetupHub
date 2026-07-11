@@ -1,0 +1,7 @@
+{
+  "id": "cpuz",
+  "nome": "CPU-Z",
+  "categoria": "Utilitários",
+  "wingetId": "CPUID.CPU-Z",
+  "githubRepo": null
+}

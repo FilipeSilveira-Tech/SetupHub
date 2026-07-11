@@ -1,0 +1,7 @@
+{
+  "id": "vscode_community",
+  "nome": "Visual Studio Community",
+  "categoria": "IDEs",
+  "wingetId": "Microsoft.VisualStudio.2022.Community",
+  "githubRepo": null
+}

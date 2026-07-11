@@ -1,0 +1,7 @@
+{
+  "id": "vlc",
+  "nome": "VLC Media Player",
+  "categoria": "Multimídia",
+  "wingetId": "VideoLAN.VLC",
+  "githubRepo": null
+}

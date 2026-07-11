@@ -1,0 +1,7 @@
+{
+  "id": "intel",
+  "nome": "Intel Driver & Support Assistant",
+  "categoria": "Drivers",
+  "wingetId": "Intel.IntelDriverAndSupportAssistant",
+  "githubRepo": null
+}

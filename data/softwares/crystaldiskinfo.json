@@ -1,0 +1,7 @@
+{
+  "id": "crystaldiskinfo",
+  "nome": "CrystalDiskInfo",
+  "categoria": "Utilitários",
+  "wingetId": "CrystalMarkSoftware.CrystalDiskInfo",
+  "githubRepo": "hiyohiyo/CrystalDiskInfo"
+}

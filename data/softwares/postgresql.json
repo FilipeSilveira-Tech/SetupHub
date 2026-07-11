@@ -1,0 +1,7 @@
+{
+  "id": "postgresql",
+  "nome": "PostgreSQL",
+  "categoria": "Desenvolvimento",
+  "wingetId": "PostgreSQL.PostgreSQL",
+  "githubRepo": null
+}

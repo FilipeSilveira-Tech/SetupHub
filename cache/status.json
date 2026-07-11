@@ -1,0 +1,16 @@
+[
+  {
+    "id": "node",
+    "instalado": true,
+    "versaoInstalada": "22.16.0",
+    "ultimaVersao": "22.17.1",
+    "status": "update"
+  },
+  {
+    "id": "git",
+    "instalado": false,
+    "versaoInstalada": null,
+    "ultimaVersao": "2.51.0",
+    "status": "not-installed"
+  }
+]

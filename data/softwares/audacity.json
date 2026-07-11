@@ -1,0 +1,7 @@
+{
+  "id": "audacity",
+  "nome": "Audacity",
+  "categoria": "Multimídia",
+  "wingetId": "Audacity.Audacity",
+  "githubRepo": "audacity/audacity"
+}

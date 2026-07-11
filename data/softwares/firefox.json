@@ -1,0 +1,7 @@
+{
+  "id": "firefox",
+  "nome": "Mozilla Firefox",
+  "categoria": "Navegadores",
+  "wingetId": "Mozilla.Firefox",
+  "githubRepo": null
+}

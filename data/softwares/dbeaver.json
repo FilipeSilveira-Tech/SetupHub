@@ -1,0 +1,7 @@
+{
+  "id": "dbeaver",
+  "nome": "DBeaver Community",
+  "categoria": "Desenvolvimento",
+  "wingetId": "dbeaver.dbeaver",
+  "githubRepo": "dbeaver/dbeaver"
+}

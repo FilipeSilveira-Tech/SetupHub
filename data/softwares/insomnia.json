@@ -1,0 +1,7 @@
+{
+  "id": "insomnia",
+  "nome": "Insomnia",
+  "categoria": "Desenvolvimento",
+  "wingetId": "Kong.Insomnia",
+  "githubRepo": "Kong/insomnia"
+}

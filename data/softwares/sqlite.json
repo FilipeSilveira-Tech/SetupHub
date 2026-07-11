@@ -1,0 +1,7 @@
+{
+  "id": "sqlite",
+  "nome": "SQLite",
+  "categoria": "Desenvolvimento",
+  "wingetId": "SQLite.SQLite",
+  "githubRepo": null
+}

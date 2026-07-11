@@ -1,0 +1,7 @@
+{
+  "id": "7zip",
+  "nome": "7-Zip",
+  "categoria": "Compactadores",
+  "wingetId": "7zip.7zip",
+  "githubRepo": null
+}

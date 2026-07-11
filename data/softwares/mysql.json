@@ -1,0 +1,7 @@
+{
+  "id": "mysql",
+  "nome": "MySQL Server",
+  "categoria": "Desenvolvimento",
+  "wingetId": "Oracle.MySQL",
+  "githubRepo": null
+}

@@ -1,0 +1,7 @@
+{
+  "id": "hwmonitor",
+  "nome": "HWMonitor",
+  "categoria": "Utilitários",
+  "wingetId": "CPUID.HWMonitor",
+  "githubRepo": null
+}

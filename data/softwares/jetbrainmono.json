@@ -1,0 +1,7 @@
+{
+  "id": "jetbrainmono",
+  "nome": "JetBrains Mono",
+  "categoria": "Fontes",
+  "wingetId": "JetBrains.JetBrainsMono",
+  "githubRepo": "JetBrains/JetBrainsMono"
+}

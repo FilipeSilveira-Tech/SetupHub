@@ -1,0 +1,7 @@
+{
+  "id": "rufus",
+  "nome": "Rufus",
+  "categoria": "Utilitários",
+  "wingetId": "Akeo.Rufus",
+  "githubRepo": "pbatard/rufus"
+}

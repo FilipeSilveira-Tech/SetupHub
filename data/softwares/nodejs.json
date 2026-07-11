@@ -1,0 +1,7 @@
+{
+  "id": "nodejs",
+  "nome": "Node.js",
+  "categoria": "Desenvolvimento",
+  "wingetId": "OpenJS.NodeJS",
+  "githubRepo": "nodejs/node"
+}

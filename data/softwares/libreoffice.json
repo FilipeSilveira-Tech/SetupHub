@@ -1,0 +1,7 @@
+{
+  "id": "libreoffice",
+  "nome": "LibreOffice",
+  "categoria": "Produtividade",
+  "wingetId": "TheDocumentFoundation.LibreOffice",
+  "githubRepo": null
+}

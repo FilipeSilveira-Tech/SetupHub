@@ -1,0 +1,7 @@
+{
+  "id": "intellij",
+  "nome": "IntelliJ IDEA Community",
+  "categoria": "IDEs",
+  "wingetId": "JetBrains.IntelliJIDEA.Community",
+  "githubRepo": null
+}

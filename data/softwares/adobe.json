@@ -1,0 +1,7 @@
+{
+  "id": "adobe",
+  "nome": "Adobe Acrobat Reader",
+  "categoria": "Produtividade",
+  "wingetId": "Adobe.Acrobat.Reader.64-bit",
+  "githubRepo": null
+}

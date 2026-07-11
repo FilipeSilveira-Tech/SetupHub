@@ -1,0 +1,7 @@
+{
+  "id": "obsidian",
+  "nome": "Obsidian",
+  "categoria": "Produtividade",
+  "wingetId": "Obsidian.Obsidian",
+  "githubRepo": "obsidianmd/obsidian-releases"
+}

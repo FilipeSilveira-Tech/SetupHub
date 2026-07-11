@@ -1,0 +1,7 @@
+{
+  "id": "battlenet",
+  "nome": "Battle.net",
+  "categoria": "Jogos",
+  "wingetId": "Blizzard.BattleNet",
+  "githubRepo": null
+}

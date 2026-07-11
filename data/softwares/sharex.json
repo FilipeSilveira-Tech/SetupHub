@@ -1,0 +1,7 @@
+{
+  "id": "sharex",
+  "nome": "ShareX",
+  "categoria": "Utilitários",
+  "wingetId": "ShareX.ShareX",
+  "githubRepo": "ShareX/ShareX"
+}

@@ -1,0 +1,7 @@
+{
+  "id": "bitwarden",
+  "nome": "Bitwarden",
+  "categoria": "Segurança",
+  "wingetId": "Bitwarden.Bitwarden",
+  "githubRepo": "bitwarden/clients"
+}

@@ -1,0 +1,7 @@
+{
+  "id": "amd",
+  "nome": "AMD Software: Adrenalin Edition",
+  "categoria": "Drivers",
+  "wingetId": "AMD.Adrenalin",
+  "githubRepo": null
+}

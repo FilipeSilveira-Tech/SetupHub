@@ -1,0 +1,80 @@
+{
+  "categorias": {
+    "navegadores": ["chrome", "firefox", "brave", "opera", "operagx"],
+    "comunicacao": ["discord", "whatsapp_desktop", "telegram", "teams", "zoom"],
+    "desenvolvimento": [
+      "nodejs",
+      "python",
+      "java",
+      "git",
+      "docker",
+      "postgresql",
+      "mysql",
+      "sqlite",
+      "dbeaver",
+      "postman",
+      "insomnia",
+      "bruno"
+    ],
+    "ides": [
+      "vscode",
+      "vscode_community",
+      "intellij",
+      "webstorm",
+      "pycharm",
+      "nodepad++"
+    ],
+    "produtividade": [
+        "libreoffice",
+        "adobe",
+        "notion",
+        "obsidian",
+        "powertoys"
+    ],
+    "multimidia": [
+        "vlc",
+        "spotify",
+        "obs",
+        "audacity",
+        "handbrake"
+    ],
+    "jogos": [
+        "steam",
+        "epic",
+        "ea",
+        "ubisoft",
+        "battlenet",
+        "riot",
+        "gog"
+    ],
+    "compactadores": [
+        "7zip",
+        "winrar",
+        "peazip"
+    ],
+    "utilitarios": [
+        "everthing",
+        "sharex",
+        "rufus",
+        "cpuz",
+        "crystaldiskinfo",
+        "hwmonitor"
+    ],
+    "drivers": [
+        "nvidia",
+        "amd",
+        "intel"
+    ],
+    "seguranca": [
+        "malwarebytes",
+        "bitwarden",
+        "keepassxc"
+    ],
+    "fontes": [
+        "jetbrainmono",
+        "cascadiacode",
+        "firecode",
+        "nedfonts"
+    ]
+  }
+}

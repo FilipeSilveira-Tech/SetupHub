@@ -1,0 +1,7 @@
+{
+  "id": "java",
+  "nome": "Java SE Development Kit",
+  "categoria": "Desenvolvimento",
+  "wingetId": "Oracle.JDK.21",
+  "githubRepo": null
+}

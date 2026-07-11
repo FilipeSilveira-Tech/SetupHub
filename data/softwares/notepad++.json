@@ -1,0 +1,7 @@
+{
+  "id": "nodepad++",
+  "nome": "Notepad++",
+  "categoria": "IDEs",
+  "wingetId": "Notepad++.Notepad++",
+  "githubRepo": "notepad-plus-plus/notepad-plus-plus"
+}

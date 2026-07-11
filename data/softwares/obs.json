@@ -1,0 +1,7 @@
+{
+  "id": "obs",
+  "nome": "OBS Studio",
+  "categoria": "Multimídia",
+  "wingetId": "OBSProject.OBSStudio",
+  "githubRepo": "obsproject/obs-studio"
+}

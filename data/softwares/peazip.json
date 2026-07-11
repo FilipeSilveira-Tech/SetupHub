@@ -1,0 +1,7 @@
+{
+  "id": "peazip",
+  "nome": "PeaZip",
+  "categoria": "Compactadores",
+  "wingetId": "GiorgioTani.PeaZip",
+  "githubRepo": "giorgiotani/PeaZip"
+}

@@ -1,0 +1,7 @@
+{
+  "id": "docker",
+  "nome": "Docker Desktop",
+  "categoria": "Desenvolvimento",
+  "wingetId": "Docker.DockerDesktop",
+  "githubRepo": "docker/docker-desktop"
+}

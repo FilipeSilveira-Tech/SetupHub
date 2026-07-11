@@ -1,0 +1,7 @@
+{
+  "id": "teams",
+  "nome": "Microsoft Teams",
+  "categoria": "Comunicação",
+  "wingetId": "Microsoft.Teams",
+  "githubRepo": null
+}

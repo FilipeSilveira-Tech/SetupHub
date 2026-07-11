@@ -1,0 +1,7 @@
+{
+  "id": "vscode",
+  "nome": "Visual Studio Code",
+  "categoria": "IDEs",
+  "wingetId": "Microsoft.VisualStudioCode",
+  "githubRepo": "microsoft/vscode"
+}

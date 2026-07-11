@@ -1,0 +1,7 @@
+{
+  "id": "telegram",
+  "nome": "Telegram Desktop",
+  "categoria": "Comunicação",
+  "wingetId": "Telegram.TelegramDesktop",
+  "githubRepo": "telegramdesktop/tdesktop"
+}

@@ -1,0 +1,7 @@
+{
+  "id": "handbrake",
+  "nome": "HandBrake",
+  "categoria": "Multimídia",
+  "wingetId": "HandBrake.HandBrake",
+  "githubRepo": "HandBrake/HandBrake"
+}

@@ -1,0 +1,7 @@
+{
+  "id": "winrar",
+  "nome": "WinRAR",
+  "categoria": "Compactadores",
+  "wingetId": "RARLab.WinRAR",
+  "githubRepo": null
+}

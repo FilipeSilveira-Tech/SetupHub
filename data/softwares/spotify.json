@@ -1,0 +1,7 @@
+{
+  "id": "spotify",
+  "nome": "Spotify",
+  "categoria": "Multimídia",
+  "wingetId": "Spotify.Spotify",
+  "githubRepo": null
+}

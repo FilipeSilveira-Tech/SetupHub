@@ -1,0 +1,7 @@
+{
+  "id": "nvidia",
+  "nome": "NVIDIA GeForce Experience",
+  "categoria": "Drivers",
+  "wingetId": "NVIDIA.GeForceExperience",
+  "githubRepo": null
+}
