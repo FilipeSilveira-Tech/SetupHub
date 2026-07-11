@@ -1,7 +1,0 @@
-{
-  "id": "brave",
-  "nome": "Brave Browser",
-  "categoria": "Navegadores",
-  "wingetId": "Brave.Brave",
-  "githubRepo": "brave/brave-browser"
-}

@@ -1,0 +1,9 @@
+{
+  "id": "chrome",
+  "nome": "Google Chrome",
+  "categoria": "Navegadores",
+  "descricao": "O navegador mais popular do mundo, focado em velocidade, segurança e integração com o ecossistema Google.",
+  "icone": "../../assets/icon/navegadores/chrome.svg",
+  "wingetId": "Google.Chrome",
+  "githubRepo": null
+}

@@ -1,0 +1,9 @@
+{
+  "id": "opera",
+  "nome": "Opera",
+  "categoria": "Navegadores",
+  "descricao": "Inclui recursos como VPN nativa gratuita, bloqueador de publicidade e mensageiros integrados à barra lateral.",
+  "icone": "../../assets/icon/navegadores/opera.svg",
+  "wingetId": "Opera.Opera",
+  "githubRepo": null
+}
