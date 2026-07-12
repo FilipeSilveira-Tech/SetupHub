@@ -54,6 +54,12 @@
             crossorigin="anonymous"
         ></script>
 
-        <script type="module" src="../scripts/pages/navegadores.js"></script>
+        <script type="module">
+            import { renderBrowserCategory } from '../scripts/pages/navegadores.js';
+
+            document.addEventListener("DOMContentLoaded", () => {
+                renderBrowserCategory();
+            });
+        </script>
     </body>
 </html>

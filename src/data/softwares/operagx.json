@@ -3,7 +3,7 @@
   "nome": "Opera GX",
   "categoria": "Navegadores",
   "descricao": "O primeiro navegador feito especificamente para o público gamer, com limitadores de uso de CPU, RAM e rede.",
-  "icone": "../../assets/icon/navegadores/operagx.svg",
+  "icone": "../../src/assets/icon/navegadores/operagx.svg",
   "wingetId": "Opera.OperaGX",
   "githubRepo": null
 }

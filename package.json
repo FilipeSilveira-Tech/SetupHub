@@ -4,7 +4,7 @@
   "description": "Software para instalações programas pós formatação",
   "license": "MIT",
   "author": "FilipeSilveira-Tech",
-  "type": "commonjs",
+  "type": "module",
   "main": "main.js",
   "scripts": {
     "start": "electron ."
@@ -14,12 +14,14 @@
     "axios": "^1.18.1",
     "bootstrap": "^5.3.8",
     "bootstrap-icons": "^1.13.1",
+    "child": "^0.0.3",
     "dayjs": "^1.11.21",
     "electron-store": "^11.0.2",
     "fs-extra": "^11.3.6",
     "node-fetch": "^3.3.2",
     "progress": "^2.0.3",
-    "sweetalert2": "^11.26.25"
+    "sweetalert2": "^11.26.25",
+    "util": "^0.12.5"
   },
   "devDependencies": {
     "concurrently": "^10.0.3",

@@ -1,15 +1,25 @@
-const { app, BrowserWindow, ipcMain } = require("electron");
-const fs = require("fs/promises");
-const path = require("path");
+import { app, BrowserWindow, ipcMain } from "electron";
+import { fileURLToPath } from "url";
+import path from "path";
+
+// Recriando as variáveis que sumiram
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+import SoftwareRepository from "./src/scripts/services/SoftwareRepository.js";
+import WingetService from "./src/scripts/services/WingetService.js";
+import SoftwareService from "./src/scripts/services/SoftwareService.js";
 
 const createWindow = () => {
   const win = new BrowserWindow({
-    width: 800,
-    height: 600,
+    width: 1280,
+    height: 720,
+    icon: "./src/assets/icon.ico",
     webPreferences: {
-      preload: path.join(__dirname, "preload.js"),
+      preload: path.join(__dirname, "preload.cjs"),
       contextIsolation: true,
       nodeIntegration: false,
+      sandbox: true,
     },
   });
 
@@ -17,25 +27,24 @@ const createWindow = () => {
 };
 
 ipcMain.handle("software:getAll", async () => {
-  const softwarePath = path.join(__dirname, "src", "data", "softwares");
-  const files = await fs.readdir(softwarePath);
-  const softwares = [];
+  return await SoftwareRepository.getAll();
+});
 
-  for (const file of files) {
-    if (!file.endsWith(".json")) continue;
-    const filePath = path.join(softwarePath, file);
-    const content = await fs.readFile(filePath, "utf-8");
-    softwares.push(JSON.parse(content));
-  }
-  return softwares;
+ipcMain.handle("software:getStatus", async () => {
+  return await WingetService.listInstalled();
 });
 
 app.on("window-all-closed", () => {
-  if (process.platform !== "darwin") {
-    app.quite();
-  }
+  app.quit();
 });
 
-app.whenReady().then(() => {
-  createWindow();
+app.whenReady().then(async () => {
+  await createWindow();
+  app.on("activate", () => {
+    if (BrowserWindow.getAllWindows().length === 0) createWindow();
+  });
+
+  WingetService.initializeCache().catch((err) => {
+    console.error("Falha ao carregar programas na inicialização", err);
+  });
 });

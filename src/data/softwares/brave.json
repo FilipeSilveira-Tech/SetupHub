@@ -4,6 +4,6 @@
   "categoria": "Navegadores",
   "descricao": "Bloqueia anúncios e rastreadores nativamente direto da fábrica, sendo extremamente rápido, leve e privado.",
   "wingetId": "Brave.Brave",
-  "icone": "../../assets/icon/navegadores/chrome.svg",
+  "icone": "../../src/assets/icon/navegadores/brave.svg",
   "githubRepo": "brave/brave-browser"
 }

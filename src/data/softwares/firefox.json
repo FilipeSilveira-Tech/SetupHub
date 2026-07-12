@@ -4,6 +4,6 @@
   "categoria": "Navegadores",
   "descricao": "Navegador de código aberto totalmente focado em privacidade, proteção de dados e alto nível de customização.",
   "wingetId": "Mozilla.Firefox",
-  "icone": "../../assets/icon/navegadores/fiefox.svg",
+  "icone": "../../src/assets/icon/navegadores/firefox.svg",
   "githubRepo": null
 }
