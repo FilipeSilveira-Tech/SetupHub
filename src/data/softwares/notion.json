@@ -2,6 +2,8 @@
   "id": "notion",
   "nome": "Notion",
   "categoria": "Produtividade",
+  "descricao": "Um espaço de trabalho multifuncional baseado em blocos que combina notas, bancos de dados, quadros Kanban e gerenciamento de projetos. É altamente colaborativo e ideal para organizar a vida pessoal ou profissional.",
+  "icone": "../../src/assets/icon/produtividade/notion.svg",
   "wingetId": "Notion.Notion",
   "githubRepo": null
 }

@@ -2,6 +2,8 @@
   "id": "libreoffice",
   "nome": "LibreOffice",
   "categoria": "Produtividade",
+  "descricao": "Uma suíte de escritório gratuita e de código aberto alternativa ao Microsoft Office. Inclui ferramentas completas para edição de texto (Writer), planilhas (Calc) e apresentações (Impress).",
+  "icone": "../../src/assets/icon/produtividade/libreoffice.svg",
   "wingetId": "TheDocumentFoundation.LibreOffice",
   "githubRepo": null
 }

@@ -2,6 +2,8 @@
   "id": "peazip",
   "nome": "PeaZip",
   "categoria": "Compactadores",
+  "descricao": "Um gerenciador de arquivos e compactador gratuito de código aberto com uma interface moderna e amigável. Ele suporta mais de 200 formatos de arquivos e possui forte foco em segurança e criptografia de dados.",
+  "icone": "../../src/assets/icon/compactadores/peazip.svg",
   "wingetId": "GiorgioTani.PeaZip",
   "githubRepo": "giorgiotani/PeaZip"
 }

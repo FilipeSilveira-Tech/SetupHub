@@ -2,6 +2,8 @@
   "id": "winrar",
   "nome": "WinRAR",
   "categoria": "Compactadores",
+  "descricao": "O utilitário de compactação mais tradicional do mercado, conhecido por criar arquivos no formato .RAR. É uma ferramenta robusta para reparar arquivos corrompidos, dividir arquivos grandes em partes e criar pastas com senha.",
+  "icone": "../../src/assets/icon/compactadores/winrar.svg",
   "wingetId": "RARLab.WinRAR",
   "githubRepo": null
 }

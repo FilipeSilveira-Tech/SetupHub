@@ -2,6 +2,8 @@
   "id": "handbrake",
   "nome": "HandBrake",
   "categoria": "Multimídia",
+  "descricao": "Um conversor de vídeo gratuito e de código aberto. Serve para transformar vídeos de praticamente qualquer formato para códigos modernos (como MP4 ou MKV), além de reduzir o tamanho de arquivos pesados sem perder qualidade.",
+  "icone": "../../src/assets/icon/multimidia/handbrake.svg",
   "wingetId": "HandBrake.HandBrake",
   "githubRepo": "HandBrake/HandBrake"
 }

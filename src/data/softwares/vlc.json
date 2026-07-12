@@ -2,6 +2,8 @@
   "id": "vlc",
   "nome": "VLC Media Player",
   "categoria": "Multimídia",
+  "descricao": "O reprodutor de mídia definitivo, gratuito e de código aberto. É famoso por ser extremamente leve e capaz de rodar praticamente qualquer formato de vídeo ou áudio existente sem a necessidade de instalar pacotes de codecs adicionais.",
+  "icone": "../../src/assets/icon/multimidia/vlc-media-player.svg",
   "wingetId": "VideoLAN.VLC",
   "githubRepo": null
 }

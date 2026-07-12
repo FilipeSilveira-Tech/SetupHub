@@ -2,6 +2,8 @@
   "id": "obsidian",
   "nome": "Obsidian",
   "categoria": "Produtividade",
+  "descricao": "Um aplicativo de notas super rápido baseado em arquivos Markdown locais. Seu grande diferencial é criar conexões em rede entre os pensamentos (segundo cérebro) e funcionar de forma 100% offline.",
+  "icone": "../../src/assets/icon/produtividade/obsidian.svg",
   "wingetId": "Obsidian.Obsidian",
   "githubRepo": "obsidianmd/obsidian-releases"
 }

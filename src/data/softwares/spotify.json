@@ -2,6 +2,8 @@
   "id": "spotify",
   "nome": "Spotify",
   "categoria": "Multimídia",
+  "descricao": "A plataforma de streaming de áudio mais popular do mundo. Dá acesso instantâneo a um catálogo gigantesco de músicas e podcasts, além de criar playlists personalizadas baseadas no gosto do usuário.",
+  "icone": "../../src/assets/icon/multimidia/spotify.svg",
   "wingetId": "Spotify.Spotify",
   "githubRepo": null
 }
