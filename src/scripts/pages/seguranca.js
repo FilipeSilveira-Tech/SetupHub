@@ -1,8 +1,8 @@
 import CardRenderer from "../render/CardRenderer.js";
 import SoftwareService from "../services/SoftwareService.js";
 
-async function renderUtilitariosCategory() {
-  const container = document.getElementById("utilitarios-list");
+async function renderSegurancaCategory() {
+  const container = document.getElementById("seguranca-list");
   if (!container) return;
 
   if (!SoftwareService.isInitialized) {
@@ -15,7 +15,7 @@ async function renderUtilitariosCategory() {
   }
 
   // getByCategory vai dar um await global
-  const softwares = await SoftwareService.getByCategory("Utilitários");
+  const softwares = await SoftwareService.getByCategory("Segurança");
   console.log(softwares);
 
   container.innerHTML = "";
@@ -26,4 +26,4 @@ async function renderUtilitariosCategory() {
   });
 }
 
-export { renderUtilitariosCategory };
+export { renderSegurancaCategory };

@@ -2,6 +2,8 @@
   "id": "intel",
   "nome": "Intel Driver & Support Assistant",
   "categoria": "Drivers",
+  "descricao": "Responsável por atualizar os drivers de chips gráficos integrados e das placas de vídeo dedicadas Intel Arc. Ele garante a reprodução correta de vídeos em alta definição, suporte a múltiplos monitores e estabilidade para tarefas do dia a dia.",
+  "icone": "../../src/assets/icon/drivers/intel.svg",
   "wingetId": "Intel.IntelDriverAndSupportAssistant",
   "githubRepo": null
 }

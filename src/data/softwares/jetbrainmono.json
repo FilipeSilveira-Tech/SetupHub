@@ -2,6 +2,8 @@
   "id": "jetbrainmono",
   "nome": "JetBrains Mono",
   "categoria": "Fontes",
+  "descricao": "Desenvolvida especificamente para programadores, é a fonte padrão das IDEs da JetBrains. Ela possui uma altura de caracteres ligeiramente maior e formas ovais otimizadas, reduzindo o cansaço visual e facilitando a distinção rápida entre letras e símbolos semelhantes (como 1, l e I).",
+  "icone": "../../src/assets/icon/fontes/google-fonts.svg",
   "wingetId": "JetBrains.JetBrainsMono",
   "githubRepo": "JetBrains/JetBrainsMono"
 }

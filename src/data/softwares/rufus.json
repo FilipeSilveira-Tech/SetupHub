@@ -2,6 +2,8 @@
   "id": "rufus",
   "nome": "Rufus",
   "categoria": "Utilitários",
+  "descricao": "O utilitário definitivo para criar pen drives bootáveis de forma rápida e simples. É a ferramenta padrão usada para gravar imagens ISO (como as do Windows ou Linux) em unidades USB para formatar e instalar sistemas operacionais.",
+  "icone": "../../src/assets/icon/utilitarios/rufus.svg",
   "wingetId": "Akeo.Rufus",
   "githubRepo": "pbatard/rufus"
 }

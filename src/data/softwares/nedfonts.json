@@ -1,7 +1,0 @@
-{
-  "id": "nedfonts",
-  "nome": "Nerd Fonts (Cascadia Code / CaskaydiaCove)",
-  "categoria": "Fontes",
-  "wingetId": "ryanoasis.nerdfonts.CaskaydiaCove",
-  "githubRepo": "ryanoasis/nerd-fonts"
-}

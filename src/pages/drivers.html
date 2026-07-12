@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="pt-br" data-bs-theme="light">
     <head>
-        <title>SetupHub - Utilitários</title>
+        <title>SetupHub - Drivers</title>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="stylesheet" href="../css/main.css">
@@ -46,12 +46,12 @@
             </div>
             <div class="d-flex align-items-center justify-content-between mb-4 pb-2 border-bottom">
                 <div>
-                    <h2 class="fw-bold text-dark mb-1">Utilitários</h2>
-                    <p class="text-muted small mb-0">Programas utilitários são ferramentas focadas em otimizar, monitorar, diagnosticar ou executar tarefas específicas de manutenção no sistema operacional</p>
+                    <h2 class="fw-bold text-dark mb-1">Drivers</h2>
+                    <p class="text-muted small mb-0">Drivers são softwares essenciais que funcionam como "tradutores" entre o sistema operacional e os componentes físicos do computador.</p>
                 </div>
             </div>
 
-            <div class="row g-4" id="utilitarios-list"></div>
+            <div class="row g-4" id="drivers-list"></div>
         </div>
 
 
@@ -62,10 +62,10 @@
         ></script>
 
         <script type="module">
-            import { renderUtilitariosCategory } from '../scripts/pages/utilitarios.js';
+            import { renderDriversCategory } from '../scripts/pages/drivers.js';
 
             document.addEventListener("DOMContentLoaded", () => {
-                renderUtilitariosCategory();
+                renderDriversCategory();
             });
         </script>
     </body>
