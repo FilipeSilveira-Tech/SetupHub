@@ -46,3 +46,15 @@ body {
     padding: 0;
 }
 
+a {
+    text-decoration: none;
+    color: unset;
+}
+
+#back-btn {
+    text-decoration: none;
+    color: #212529;
+}
+#back-btn:hover {
+    color: white;
+}

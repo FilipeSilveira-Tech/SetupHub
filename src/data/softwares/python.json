@@ -2,6 +2,8 @@
   "id": "python",
   "nome": "Python",
   "categoria": "Desenvolvimento",
-  "wingetId": "Python.Python.3.12",
+  "descricao": "Linguagem de programação versátil, famosa por sua sintaxe limpa e uso em Ciência de Dados e IA",
+  "icone": "../../src/assets/icon/desenvolvimento/python.svg",
+  "wingetId": "Python.Python.3.9",
   "githubRepo": "python/cpython"
 }

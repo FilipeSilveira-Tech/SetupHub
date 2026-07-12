@@ -2,6 +2,8 @@
   "id": "nodejs",
   "nome": "Node.js",
   "categoria": "Desenvolvimento",
+  "descricao": "Ambiente de execução que permite rodar código JavaScript no lado do servidor (backend)",
+  "icone": "../../src/assets/icon/desenvolvimento/node.svg",
   "wingetId": "OpenJS.NodeJS",
   "githubRepo": "nodejs/node"
 }

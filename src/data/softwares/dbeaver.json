@@ -2,6 +2,8 @@
   "id": "dbeaver",
   "nome": "DBeaver Community",
   "categoria": "Desenvolvimento",
+  "descricao": "Ferramenta de banco de dados multiplataforma e gratuita para desenvolvedores, administradores de banco de dados, analistas e todos que precisam trabalhar com bancos de dados.",
+  "icone": "../../src/assets/icon/desenvolvimento/dbeaver.svg",
   "wingetId": "dbeaver.dbeaver",
   "githubRepo": "dbeaver/dbeaver"
 }

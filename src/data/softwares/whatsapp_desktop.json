@@ -1,6 +1,8 @@
 {
   "id": "whatsapp_desktop",
   "nome": "WhatsApp",
+  "descricao": "Aplicativo gratuito de mensagem instantâneas e chamadas de voz e vídeo.",
+  "icone": "../../src/assets/icon/comunicacao/whatsapp.svg",
   "categoria": "Comunicação",
   "wingetId": "9NKSQGP7F2NH",
   "githubRepo": null

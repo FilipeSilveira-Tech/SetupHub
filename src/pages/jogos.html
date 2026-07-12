@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="pt-br" data-bs-theme="light">
     <head>
-        <title>SetupHub - Navegadores</title>
+        <title>SetupHub - Jogos</title>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="stylesheet" href="../css/main.css">
@@ -46,12 +46,12 @@
             </div>
             <div class="d-flex align-items-center justify-content-between mb-4 pb-2 border-bottom">
                 <div>
-                    <h2 class="fw-bold text-dark mb-1">Navegadores</h2>
-                    <p class="text-muted small mb-0">Selecione e baixe os melhores navegadores web disponíveis.</p>
+                    <h2 class="fw-bold text-dark mb-1">Jogos</h2>
+                    <p class="text-muted small mb-0">As melhores maiores plataformas de distribuição de games!</p>
                 </div>
             </div>
 
-            <div class="row g-4" id="browser-list"></div>
+            <div class="row g-4" id="games-list"></div>
         </div>
 
 
@@ -62,10 +62,10 @@
         ></script>
 
         <script type="module">
-            import { renderBrowserCategory } from '../scripts/pages/navegadores.js';
+            import { renderGamesCategory } from '../scripts/pages/jogos.js';
 
             document.addEventListener("DOMContentLoaded", () => {
-                renderBrowserCategory();
+                renderGamesCategory();
             });
         </script>
     </body>

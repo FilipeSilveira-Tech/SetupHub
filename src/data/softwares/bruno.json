@@ -1,7 +1,9 @@
 {
   "id": "bruno",
   "nome": "Bruno",
+  "descricao": "Cliente de API rápido, leve e de código aberto (Alternativa de Postman)",
+  "icone": "../../src/assets/icon/desenvolvimento/bruno.svg",
   "categoria": "Desenvolvimento",
-  "wingetId": "UseBruno.Bruno",
+  "wingetId": "Bruno.Bruno",
   "githubRepo": "usebruno/bruno"
 }

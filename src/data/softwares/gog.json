@@ -2,6 +2,8 @@
   "id": "gog",
   "nome": "GOG Galaxy",
   "categoria": "Jogos",
+  "descricao": "Mantida pela CD Projekt, é a plataforma favorita de purista por vender jogos totalmente sem DRM e focar em clássicos antigos otimizados por PCs modernos.",
+  "icone": "../../src/assets/icon/jogos/gog.svg",
   "wingetId": "GOG.Galaxy",
   "githubRepo": null
 }

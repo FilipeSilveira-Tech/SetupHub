@@ -2,6 +2,8 @@
   "id": "ubisoft",
   "nome": "Ubisoft Connect",
   "categoria": "Jogos",
+  "descricao": "Plataforma oficial da Ubisoft para gerencias seus títulos, como Assassin's Creed, Far Cry e Rainbow Six, integrando sistema de recompensas por cross-plaform e serviço Ubisoft+",
+  "icone": "../../src/assets/icon/jogos/ubisoft.svg",
   "wingetId": "Ubisoft.Connect",
   "githubRepo": null
 }

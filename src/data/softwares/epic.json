@@ -2,6 +2,8 @@
   "id": "epic",
   "nome": "Epic Games Launcher",
   "categoria": "Jogos",
+  "descricao": "Plataforma da distribuidora de Fortnite e famosa pela distribuição de games gratuitos.",
+  "icone": "../../src/assets/icon/jogos/epic.svg",
   "wingetId": "EpicGames.EpicGamesLauncher",
   "githubRepo": null
 }

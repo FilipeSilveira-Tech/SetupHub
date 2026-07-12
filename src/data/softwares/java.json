@@ -2,6 +2,8 @@
   "id": "java",
   "nome": "Java SE Development Kit",
   "categoria": "Desenvolvimento",
+  "descricao": "Linguagem de programação multiplataformas, robusta e muito usada em grandes empresas",
+  "icone": "../../src/assets/icon/desenvolvimento/java.svg",
   "wingetId": "Oracle.JDK.21",
   "githubRepo": null
 }

@@ -2,6 +2,8 @@
   "id": "zoom",
   "nome": "Zoom",
   "categoria": "Comunicação",
+  "descricao": "Plataforma de colaboração e vídeoconferência em nuvem.",
+  "icone": "../../src/assets/icon/comunicacao/zoom.svg",
   "wingetId": "Zoom.Zoom",
   "githubRepo": null
 }

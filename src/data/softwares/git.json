@@ -2,6 +2,8 @@
   "id": "git",
   "nome": "Git",
   "categoria": "Desenvolvimento",
+  "descricao": "Sistema de controle de versão para monitorar alterações no código-fonte",
+  "icone": "../../src/assets/icon/desenvolvimento/git.svg",
   "wingetId": "Git.Git",
   "githubRepo": "git-for-windows/git"
 }

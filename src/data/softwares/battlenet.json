@@ -2,6 +2,8 @@
   "id": "battlenet",
   "nome": "Battle.net",
   "categoria": "Jogos",
+  "descricao": "Plataforma da distribuidora de jogos como Call of Duty!",
+  "icone": "../../src/assets/icon/jogos/battlenet.svg",
   "wingetId": "Blizzard.BattleNet",
   "githubRepo": null
 }

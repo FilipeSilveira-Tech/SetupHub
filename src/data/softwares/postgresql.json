@@ -2,6 +2,8 @@
   "id": "postgresql",
   "nome": "PostgreSQL",
   "categoria": "Desenvolvimento",
+  "descricao": "Banco de dados relacional de código aberto, conhecido por sua alta potência e recursos avançados",
+  "icone": "../../src/assets/icon/desenvolvimento/postgresql.svg",
   "wingetId": "PostgreSQL.PostgreSQL",
   "githubRepo": null
 }

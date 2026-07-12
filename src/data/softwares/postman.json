@@ -2,6 +2,8 @@
   "id": "postman",
   "nome": "Postman",
   "categoria": "Desenvolvimento",
+  "descricao": "Plataforma completa e amplamente utilizada para criar, testar e documentar APIs",
+  "icone": "../../src/assets/icon/desenvolvimento/postman.svg",
   "wingetId": "Postman.Postman",
   "githubRepo": null
 }

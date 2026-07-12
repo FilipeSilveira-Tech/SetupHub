@@ -2,6 +2,8 @@
   "id": "telegram",
   "nome": "Telegram Desktop",
   "categoria": "Comunicação",
+  "descricao": "Aplicativo de mensagens em nuvem focado em velocidade e segurança.",
+  "icone": "../../src/assets/icon/comunicacao/telegram.svg",
   "wingetId": "Telegram.TelegramDesktop",
   "githubRepo": "telegramdesktop/tdesktop"
 }
