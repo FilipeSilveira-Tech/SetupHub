@@ -2,6 +2,8 @@
   "id": "vscode_community",
   "nome": "Visual Studio Community",
   "categoria": "IDEs",
+  "descricao": "Uma IDE robusta, completa e gratuita para estudantes e desenvolvedores independentes. Para criação de aplicativos de grande porte no ecossistema .NET (C#), C++ e desenvolvimento de games para Unity.",
+  "icone": "../../src/assets/icon/ides/vscode-community.svg",
   "wingetId": "Microsoft.VisualStudio.2022.Community",
   "githubRepo": null
 }

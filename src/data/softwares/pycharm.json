@@ -2,6 +2,8 @@
   "id": "pycharm",
   "nome": "PyCharm Community",
   "categoria": "IDEs",
+  "descricao": "Criado pela JetBrain, é a IDE lider de mercado dedicada exclusivamente ao ecossistema Pyhton. Oferecendo suporte completo para cientistas de dados e desenvolvedores web (como Django e Flask).",
+  "icone": "../../src/assets/icon/ides/pycharm.svg",
   "wingetId": "JetBrains.PyCharm.Community",
   "githubRepo": null
 }

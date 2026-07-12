@@ -2,6 +2,8 @@
   "id": "vscode",
   "nome": "Visual Studio Code",
   "categoria": "IDEs",
+  "descricao": "Criado pela Microsoft, é o editor de código mais popular do mundo atualmente. Ele se posiciona no equilibro perfeito, é leve como editor de texto, mas pode se transformar em uma IDE poderoça atráves do gigantesco mercado de extensões.",
+  "icone": "../../src/assets/icon/ides/vscode.svg",
   "wingetId": "Microsoft.VisualStudioCode",
   "githubRepo": "microsoft/vscode"
 }
