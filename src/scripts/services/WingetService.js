@@ -96,14 +96,9 @@ class WingetService {
       return [];
     }
   }
-  async show(packageId) {
-    const output = await this.execute(
-      `winget show --id ${packageId} --output json`,
-    );
-  }
   async install(packageId) {
     return this.execute(
-      `winget install --id ${packageId} --accept-source-agreements --accept-packge-agrements`,
+      `winget install --id ${packageId} --silent --accept-source-agreements --accept-package-agreements`,
     );
   }
   async uninstall(packageId) {
@@ -111,7 +106,7 @@ class WingetService {
   }
   async upgrade(packageId) {
     return this.execute(
-      `winget upgrade --id ${packageId} --accept-source-agreements --accept-package-agreements`,
+      `winget upgrade --id ${packageId} --silent --accept-source-agreements --accept-package-agreements`,
     );
   }
 

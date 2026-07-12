@@ -1,4 +1,4 @@
-import SoftwareService from "../services/SoftwareService";
+import SoftwareService from "../services/SoftwareService.js";
 
 document.addEventListener("DOMContentLoaded", () => {
   console.log("[SETUPHUB] Aplicativo inicializado. Carregando dados...");

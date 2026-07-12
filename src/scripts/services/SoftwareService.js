@@ -1,7 +1,8 @@
 class SoftwareService {
+  static software = [];
+  static initPromise = null;
+
   constructor() {
-    this.softwares = [];
-    this.isInitialized = false;
     this.initPromise = null;
   }
 
@@ -15,6 +16,7 @@ class SoftwareService {
         console.log("[SetupHub] Carregandos softwares e seus status");
 
         const softwares = await window.api.software.getAll();
+        console.log(softwares);
         const installedApps = await window.api.software.getStatus();
 
         this.softwares = softwares.map((software) => {
@@ -72,6 +74,23 @@ class SoftwareService {
   async getById(id) {
     const softwares = await this.getAll();
     return softwares.find((software) => software.id === id);
+  }
+
+  async searchSoftwares(term) {
+    const softwares = await this.getAll();
+
+    if (!term || term.trim() === "") {
+      return softwares;
+    }
+
+    const lowerTerm = term.toLowerCase();
+
+    return softwares.filter(
+      (software) =>
+        software.nome?.toLowerCase().includes(lowerTerm) ||
+        software.descricao?.toLowerCase().includes(lowerTerm) ||
+        software.wingetId?.toLowerCase().includes(lowerTerm),
+    );
   }
 }
 

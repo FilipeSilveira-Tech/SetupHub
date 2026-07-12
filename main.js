@@ -8,12 +8,11 @@ const __dirname = path.dirname(__filename);
 
 import SoftwareRepository from "./src/scripts/services/SoftwareRepository.js";
 import WingetService from "./src/scripts/services/WingetService.js";
-import SoftwareService from "./src/scripts/services/SoftwareService.js";
 
 const createWindow = () => {
   const win = new BrowserWindow({
-    width: 1280,
-    height: 720,
+    width: 1800,
+    height: 870,
     icon: "./src/assets/icon.ico",
     webPreferences: {
       preload: path.join(__dirname, "preload.cjs"),
@@ -29,9 +28,20 @@ const createWindow = () => {
 ipcMain.handle("software:getAll", async () => {
   return await SoftwareRepository.getAll();
 });
-
 ipcMain.handle("software:getStatus", async () => {
   return await WingetService.listInstalled();
+});
+ipcMain.handle("software:install", async (event, wingetId) => {
+  console.log(`[SetupHub] Iniciando a instalação do ${wingetId}`);
+  return await WingetService.install(wingetId);
+});
+ipcMain.handle("software:upgrade", async (event, wingetId) => {
+  console.log(`[IPC Main] Chamando atualização para: ${wingetId}`);
+  return await WingetService.upgrade(wingetId);
+});
+ipcMain.handle("software:uninstall", async (event, wingetId) => {
+  console.log(`[IPC Main] Chamando desinstalação para: ${wingetId}`);
+  return await WingetService.uninstall(wingetId);
 });
 
 app.on("window-all-closed", () => {

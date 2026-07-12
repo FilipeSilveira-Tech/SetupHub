@@ -7,10 +7,19 @@ async function renderDriversCategory() {
 
   if (!SoftwareService.isInitialized) {
     container.innerHTML = `
-      <div class="col-12 text-center py-5">
-        <div class="spinner-border text-primary" role="status"></div>
-        <p class="text-muted mt-2">Sincronizando programas com o Winget...</p>
-      </div>
+      <section class="bg-white border-bottom pb-4 pt-4 mb-4">
+          <div class="container">
+              <div class="d-flex align-items-center gap-3">
+                  <a href="../index.html" class="btn btn-light rounded-circle border shadow-sm text-secondary" style="width: 40px; height: 40px; display: flex; align-items: center; justify-content: center;">
+                      <i class="bi bi-arrow-left"></i>
+                  </a>
+                  <div>
+                      <h2 class="fw-bolder text-dark mb-0">Drivers</h2>
+                      <p class="text-muted mb-0">Drivers são softwares essenciais que funcionam como "tradutores" entre o sistema operacional e os componentes físicos do computador.</p>
+                  </div>
+              </div>
+          </div>
+      </section>
     `;
   }
 

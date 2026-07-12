@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="pt-br" data-bs-theme="light">
+    <head>
+        <title>SetupHub</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="./src/css/main.css">
+        <link rel="stylesheet" href="./src/css/index.css">
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+            crossorigin="anonymous"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+        />
+    </head>
+
+    <body>
+        <header class="navbar navbar-expand-lg navbar-light bg-white border-bottom shadow-sm py-3">
+            <div class="container-fluid px-4">
+                <a class="navbar-brand d-flex align-items-center" href="#">
+                    <img  src="./src/assets/logo-horizontal-grande.png" alt="Logo" height="50" class="d-inline-block align-text-top" id="logo-nav">
+                    </a>
+
+                <div class="d-flex align-items-center">
+                    <a href="./src/pages/configuracao.html">
+                        <button type="button" class="btn btn-outline-secondary d-flex align-items-center gap-2 px-3 py-2 fw-semibold shadow-sm transition-all">
+                            <i class="bi bi-gear-wide-connected fs-5"></i>
+                            <span>Configurações</span>
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <div class="container my-5">
+            <div class="row g-4">
+                
+                <!-- Navegadores -->
+                
+                <div class="col-12 col-md-6 col-lg-3">
+                    <a href="./src/pages/navegadores.html" style="text-decoration: none;">
+                    <div class="card h-100 border-0 shadow-sm text-center p-3 category-card">
+                        <div class="card-body">
+                            <div class="icon-wrapper bg-primary-subtle text-primary rounded-circle mx-auto mb-3 d-flex align-items-center justify-content-center" style="width: 60px; height: 60px;">
+                                <i class="bi bi-globe2 fs-3"></i>
+                            </div>
+                            <h5 class="card-title fw-bold text-dark mb-2">Navegadores</h5>
+                            <p class="card-text text-muted small">Chrome, Firefox, Edge e mais.</p>
+                        </div>
+                    </div>
+                    </a>
+                </div>
+
+                <!-- Comunicação -->
+                <div class="col-12 col-md-6 col-lg-3">
+                    <a href="./src/pages/comunicacao.html" style="text-decoration: none;">
+                        <div class="card h-100 border-0 shadow-sm text-center p-3 category-card">
+                            <div class="card-body">
+                                <div class="icon-wrapper bg-success-subtle text-success rounded-circle mx-auto mb-3 d-flex align-items-center justify-content-center" style="width: 60px; height: 60px;">
+                                    <i class="bi bi-chat-left-text-fill fs-3"></i>
+                                </div>
+                                <h5 class="card-title fw-bold text-dark mb-2">Comunicação</h5>
+                                <p class="card-text text-muted small">Discord, Teams, WhatsApp, Slack.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Desenvolvimento -->
+                <div class="col-12 col-md-6 col-lg-3">
+                    <a href="./src/pages/desenvolvimento.html" style="text-decoration: none;">
+                        <div class="card h-100 border-0 shadow-sm text-center p-3 category-card">
+                            <div class="card-body">
+                                <div class="icon-wrapper bg-info-subtle text-info rounded-circle mx-auto mb-3 d-flex align-items-center justify-content-center" style="width: 60px; height: 60px;">
+                                    <i class="bi bi-code-slash fs-3"></i>
+                                </div>
+                                <h5 class="card-title fw-bold text-dark mb-2">Desenvolvimento</h5>
+                                <p class="card-text text-muted small">Git, Docker, Node.js, Python.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- IDEs -->
+                <div class="col-12 col-md-6 col-lg-3">
+                    <a href="./src/pages/ide.html" style="text-decoration: none;">
+                        <div class="card h-100 border-0 shadow-sm text-center p-3 category-card">
+                            <div class="card-body">
+                                <div class="icon-wrapper bg-warning-subtle text-warning rounded-circle mx-auto mb-3 d-flex align-items-center justify-content-center" style="width: 60px; height: 60px;">
+                                    <i class="bi bi-terminal-fill fs-3"></i>
+                                </div>
+                                <h5 class="card-title fw-bold text-dark mb-2">IDEs</h5>
+                                <p class="card-text text-muted small">VS Code, Visual Studio, IntelliJ.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Produtividade -->
+                <div class="col-12 col-md-6 col-lg-3">
+                    <a href="./src/pages/produtividade.html" style="text-decoration: none;">
+                        <div class="card h-100 border-0 shadow-sm text-center p-3 category-card">
+                            <div class="card-body">
+                                <div class="icon-wrapper bg-danger-subtle text-danger rounded-circle mx-auto mb-3 d-flex align-items-center justify-content-center" style="width: 60px; height: 60px;">
+                                    <i class="bi bi-check-circle-fill fs-3"></i>
+                                </div>
+                                <h5 class="card-title fw-bold text-dark mb-2">Produtividade</h5>
+                                <p class="card-text text-muted small">Office, Notion, Obsidian.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Multimídia -->
+                <div class="col-12 col-md-6 col-lg-3">
+                    <a href="./src/pages/multimidia.html" style="text-decoration: none;">
+                        <div class="card h-100 border-0 shadow-sm text-center p-3 category-card">
+                            <div class="card-body">
+                                <div class="icon-wrapper bg-purple-subtle text-purple rounded-circle mx-auto mb-3 d-flex align-items-center justify-content-center" style="width: 60px; height: 60px; background-color: #f3e5f5; color: #8e24aa;">
+                                    <i class="bi bi-play-btn-fill fs-3"></i>
+                                </div>
+                                <h5 class="card-title fw-bold text-dark mb-2">Multimídia</h5>
+                                <p class="card-text text-muted small">VLC, Spotify, OBS Studio.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Jogos -->
+                <div class="col-12 col-md-6 col-lg-3">
+                    <a href="./src/pages/jogos.html" style="text-decoration: none;">
+                        <div class="card h-100 border-0 shadow-sm text-center p-3 category-card">
+                            <div class="card-body">
+                                <div class="icon-wrapper bg-secondary-subtle text-dark rounded-circle mx-auto mb-3 d-flex align-items-center justify-content-center" style="width: 60px; height: 60px;">
+                                    <i class="bi bi-controller fs-3"></i>
+                                </div>
+                                <h5 class="card-title fw-bold text-dark mb-2">Jogos</h5>
+                                <p class="card-text text-muted small">Steam, Epic Games, Emuladores.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Compactadores -->
+                <div class="col-12 col-md-6 col-lg-3">
+                    <a href="./src/pages/compactadores.html" style="text-decoration: none;">
+                        <div class="card h-100 border-0 shadow-sm text-center p-3 category-card">
+                            <div class="card-body">
+                                <div class="icon-wrapper bg-warning-subtle text-dark rounded-circle mx-auto mb-3 d-flex align-items-center justify-content-center" style="width: 60px; height: 60px; background-color: #fff8e1; color: #ffb300;">
+                                    <i class="bi bi-file-zip-fill fs-3"></i>
+                                </div>
+                                <h5 class="card-title fw-bold text-dark mb-2">Compactadores</h5>
+                                <p class="card-text text-muted small">WinRAR, 7-Zip, PeaZip.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Utilitários -->
+                <div class="col-12 col-md-6 col-lg-3">
+                    <a href="./src/pages/utilitarios.html" style="text-decoration: none;">
+                        <div class="card h-100 border-0 shadow-sm text-center p-3 category-card">
+                            <div class="card-body">
+                                <div class="icon-wrapper bg-secondary-subtle text-secondary rounded-circle mx-auto mb-3 d-flex align-items-center justify-content-center" style="width: 60px; height: 60px;">
+                                    <i class="bi bi-tools fs-3"></i>
+                                </div>
+                                <h5 class="card-title fw-bold text-dark mb-2">Utilitários</h5>
+                                <p class="card-text text-muted small">Rufus, ShareX, CPU-Z.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Drivers -->
+                <div class="col-12 col-md-6 col-lg-3">
+                    <a href="./src/pages/drivers.html" style="text-decoration: none;">
+                        <div class="card h-100 border-0 shadow-sm text-center p-3 category-card">
+                            <div class="card-body">
+                                <div class="icon-wrapper bg-primary-subtle text-info rounded-circle mx-auto mb-3 d-flex align-items-center justify-content-center" style="width: 60px; height: 60px; background-color: #e0f2f1; color: #00897b;">
+                                    <i class="bi bi-cpu-fill fs-3"></i>
+                                </div>
+                                <h5 class="card-title fw-bold text-dark mb-2">Drivers</h5>
+                                <p class="card-text text-muted small">NVIDIA, AMD, Intel, Realtek.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Segurança -->
+                <div class="col-12 col-md-6 col-lg-3">
+                    <a href="./src/pages/seguranca.html" style="text-decoration: none;">
+                        <div class="card h-100 border-0 shadow-sm text-center p-3 category-card">
+                            <div class="card-body">
+                                <div class="icon-wrapper bg-success-subtle text-success rounded-circle mx-auto mb-3 d-flex align-items-center justify-content-center" style="width: 60px; height: 60px; background-color: #e8f5e9; color: #2e7d32;">
+                                    <i class="bi bi-shield-lock-fill fs-3"></i>
+                                </div>
+                                <h5 class="card-title fw-bold text-dark mb-2">Segurança</h5>
+                                <p class="card-text text-muted small">Antivírus, VPNs, Firewalls.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Fontes -->
+                <div class="col-12 col-md-6 col-lg-3">
+                    <a href="./src/pages/fontes.html" style="text-decoration: none;">
+                        <div class="card h-100 border-0 shadow-sm text-center p-3 category-card">
+                            <div class="card-body">
+                                <div class="icon-wrapper bg-danger-subtle text-dark rounded-circle mx-auto mb-3 d-flex align-items-center justify-content-center" style="width: 60px; height: 60px; background-color: #fce4ec; color: #c2185b;">
+                                    <i class="bi bi-type fs-3"></i>
+                                </div>
+                                <h5 class="card-title fw-bold text-dark mb-2">Fontes</h5>
+                                <p class="card-text text-muted small">Google Fonts, Tipografias, TTF/OTF.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+            crossorigin="anonymous"
+        ></script>
+
+        <script type="module" src="./src/scripts/pages/index.js"></script>
+    </body>
+</html>
