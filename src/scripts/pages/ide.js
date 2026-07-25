@@ -5,6 +5,8 @@ async function renderideCategory() {
   const container = document.getElementById("ide-list");
   if (!container) return;
 
+  const data = JSON.parse(localStorage.getItem("@SetupHub:IDEs"));
+
   if (!SoftwareService.isInitialized) {
     container.innerHTML = `
       <section class="bg-white border-bottom pb-4 pt-4 mb-4">
@@ -24,12 +26,21 @@ async function renderideCategory() {
   }
 
   // getByCategory vai dar um await global
-  const softwares = await SoftwareService.getByCategory("IDEs");
-  console.log(softwares);
+  if (!data) {
+    const softwares = await SoftwareService.getByCategory("IDEs");
+    container.innerHTML = "";
+
+    softwares.forEach((software) => {
+      const card = CardRenderer.render(software);
+      container.appendChild(card);
+    });
+
+    await localStorage.setItem("@SetupHub:IDEs", JSON.stringify(softwares));
+  }
 
   container.innerHTML = "";
 
-  softwares.forEach((software) => {
+  data.forEach((software) => {
     const card = CardRenderer.render(software);
     container.appendChild(card);
   });

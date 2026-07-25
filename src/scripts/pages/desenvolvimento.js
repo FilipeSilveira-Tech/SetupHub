@@ -5,6 +5,8 @@ async function renderdesenvolvimentoCategory() {
   const container = document.getElementById("desenvolvimento-list");
   if (!container) return;
 
+  const data = JSON.parse(localStorage.getItem("@SetupHub:Desenvolvimento"));
+
   if (!SoftwareService.isInitialized) {
     container.innerHTML = `
       <section class="bg-white border-bottom pb-4 pt-4 mb-4">
@@ -24,12 +26,24 @@ async function renderdesenvolvimentoCategory() {
   }
 
   // getByCategory vai dar um await global
-  const softwares = await SoftwareService.getByCategory("Desenvolvimento");
-  console.log(softwares);
+  if (!data) {
+    const softwares = await SoftwareService.getByCategory("Desenvolvimento");
+    container.innerHTML = "";
+
+    softwares.forEach((software) => {
+      const card = CardRenderer.render(software);
+      container.appendChild(card);
+    });
+
+    await localStorage.setItem(
+      "@SetupHub:Desenvolvimento",
+      JSON.stringify(softwares),
+    );
+  }
 
   container.innerHTML = "";
 
-  softwares.forEach((software) => {
+  data.forEach((software) => {
     const card = CardRenderer.render(software);
     container.appendChild(card);
   });

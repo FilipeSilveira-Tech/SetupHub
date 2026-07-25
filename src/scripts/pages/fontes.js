@@ -5,6 +5,8 @@ async function renderFontesCategory() {
   const container = document.getElementById("fontes-list");
   if (!container) return;
 
+  const data = JSON.parse(localStorage.getItem("@SetupHub:Fontes"));
+
   if (!SoftwareService.isInitialized) {
     container.innerHTML = `
       <section class="bg-white border-bottom pb-4 pt-4 mb-4">
@@ -24,12 +26,21 @@ async function renderFontesCategory() {
   }
 
   // getByCategory vai dar um await global
-  const softwares = await SoftwareService.getByCategory("Fontes");
-  console.log(softwares);
+  if (!data) {
+    const softwares = await SoftwareService.getByCategory("Fontes");
+    container.innerHTML = "";
+
+    softwares.forEach((software) => {
+      const card = CardRenderer.render(software);
+      container.appendChild(card);
+    });
+
+    await localStorage.setItem("@SetupHub:Fontes", JSON.stringify(softwares));
+  }
 
   container.innerHTML = "";
 
-  softwares.forEach((software) => {
+  data.forEach((software) => {
     const card = CardRenderer.render(software);
     container.appendChild(card);
   });

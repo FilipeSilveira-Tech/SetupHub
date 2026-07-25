@@ -5,6 +5,8 @@ async function renderGamesCategory() {
   const container = document.getElementById("games-list");
   if (!container) return;
 
+  const data = JSON.parse(localStorage.getItem("@SetupHub:Jogos"));
+
   if (!SoftwareService.isInitialized) {
     container.innerHTML = `
       <section class="bg-white border-bottom pb-4 pt-4 mb-4">
@@ -24,12 +26,21 @@ async function renderGamesCategory() {
   }
 
   // getByCategory vai dar um await global
-  const softwares = await SoftwareService.getByCategory("Jogos");
-  console.log(softwares);
+  if (!data) {
+    const softwares = await SoftwareService.getByCategory("Jogos");
+    container.innerHTML = "";
+
+    softwares.forEach((software) => {
+      const card = CardRenderer.render(software);
+      container.appendChild(card);
+    });
+
+    await localStorage.setItem("@SetupHub:Jogos", JSON.stringify(softwares));
+  }
 
   container.innerHTML = "";
 
-  softwares.forEach((software) => {
+  data.forEach((software) => {
     const card = CardRenderer.render(software);
     container.appendChild(card);
   });

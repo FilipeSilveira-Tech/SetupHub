@@ -38,9 +38,6 @@
                             <button class="nav-link active text-start px-3 py-2 rounded-3 fw-medium" id="v-pills-geral-tab" data-bs-toggle="pill" data-bs-target="#v-pills-geral" type="button" role="tab">
                                 <i class="bi bi-sliders me-2"></i> Geral
                             </button>
-                            <button class="nav-link text-start px-3 py-2 rounded-3 fw-medium" id="v-pills-winget-tab" data-bs-toggle="pill" data-bs-target="#v-pills-winget" type="button" role="tab">
-                                <i class="bi bi-terminal me-2"></i> Motor Winget
-                            </button>
                             <button class="nav-link text-start px-3 py-2 rounded-3 fw-medium" id="v-pills-sobre-tab" data-bs-toggle="pill" data-bs-target="#v-pills-sobre" type="button" role="tab">
                                 <i class="bi bi-info-circle me-2"></i> Sobre
                             </button>
@@ -79,7 +76,7 @@
                             </div>
                         </div>
 
-                        <div class="card border-0 shadow-sm rounded-4 settings-card">
+                        <div class="card border-0 shadow-sm rounded-4 settings-card mb-5">
                             <div class="card-body p-4">
                                 <h5 class="fw-bold mb-4"><i class="bi bi-rocket-takeoff me-2 text-primary"></i> Inicialização</h5>
                                 
@@ -94,10 +91,8 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div class="tab-pane fade" id="v-pills-winget" role="tabpanel" tabindex="0">
-                        <div class="card border-0 shadow-sm rounded-4 settings-card">
+                        <div class="card border-0 shadow-sm rounded-4 settings-card mb-5">
                             <div class="card-body p-4">
                                 <h5 class="fw-bold mb-4"><i class="bi bi-terminal-dash me-2 text-primary"></i> Comportamento de Instalação</h5>
                                 
@@ -107,7 +102,7 @@
                                         <p class="text-muted small mb-0">Ocultar telas de instalação dos programas (Recomendado).</p>
                                     </div>
                                     <div class="form-check form-switch">
-                                        <input class="form-check-input" type="checkbox" role="switch" id="silentSwitch" checked disabled>
+                                        <input class="form-check-input" type="checkbox" role="switch" id="silentSwitch" checked>
                                     </div>
                                 </div>
 
@@ -117,18 +112,8 @@
                                         <p class="text-muted small mb-0">Injeta as flags <code>--accept-source-agreements</code> automaticamente.</p>
                                     </div>
                                     <div class="form-check form-switch">
-                                        <input class="form-check-input" type="checkbox" role="switch" id="agreementsSwitch" checked disabled>
+                                        <input class="form-check-input" type="checkbox" role="switch" id="agreementsSwitch" checked>
                                     </div>
-                                </div>
-
-                                <div class="settings-row mt-3">
-                                    <h6 class="fw-semibold mb-2">Frequência de atualização de Cache</h6>
-                                    <p class="text-muted small mb-3">Tempo para verificar novas versões de programas no Windows.</p>
-                                    <select class="form-select border-0 bg-light w-50 shadow-sm" aria-label="Cache refresh">
-                                        <option value="1">A cada inicialização (Padrão)</option>
-                                        <option value="2">A cada 1 hora</option>
-                                        <option value="3">Apenas manualmente</option>
-                                    </select>
                                 </div>
                                 
                                 <div class="settings-row mt-4 border-0">
@@ -143,7 +128,7 @@
                     <div class="tab-pane fade" id="v-pills-sobre" role="tabpanel" tabindex="0">
                         <div class="card border-0 shadow-sm rounded-4 settings-card text-center p-5">
                             <div class="card-body">
-                                <img src="../assets/logo-horizontal-grande.png" alt="SetupHub Logo" height="60" class="mb-4" onerror="this.src='https://via.placeholder.com/200x60?text=SetupHub'">
+                                <img src="../assets/logo-horizontal-grande.png" alt="SetupHub Logo" height="60" class="mb-4">
                                 
                                 <h4 class="fw-bold mb-1">SetupHub</h4>
                                 <p class="text-muted mb-4">Versão 1.0.0 (Build 2026)</p>
@@ -175,6 +160,7 @@
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="../scripts/config.js"></script>
     
     </body>
 </html>

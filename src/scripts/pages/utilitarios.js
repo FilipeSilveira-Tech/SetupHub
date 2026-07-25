@@ -5,6 +5,8 @@ async function renderUtilitariosCategory() {
   const container = document.getElementById("utilitarios-list");
   if (!container) return;
 
+  const data = JSON.parse(localStorage.getItem("@SetupHub:Utilitários"));
+
   if (!SoftwareService.isInitialized) {
     container.innerHTML = `
       <section class="bg-white border-bottom pb-4 pt-4 mb-4">
@@ -24,12 +26,24 @@ async function renderUtilitariosCategory() {
   }
 
   // getByCategory vai dar um await global
-  const softwares = await SoftwareService.getByCategory("Utilitários");
-  console.log(softwares);
+  if (!data) {
+    const softwares = await SoftwareService.getByCategory("Utilitários");
+    container.innerHTML = "";
+
+    softwares.forEach((software) => {
+      const card = CardRenderer.render(software);
+      container.appendChild(card);
+    });
+
+    await localStorage.setItem(
+      "@SetupHub:Utilitários",
+      JSON.stringify(softwares),
+    );
+  }
 
   container.innerHTML = "";
 
-  softwares.forEach((software) => {
+  data.forEach((software) => {
     const card = CardRenderer.render(software);
     container.appendChild(card);
   });

@@ -5,6 +5,8 @@ async function renderBrowserCategory() {
   const container = document.getElementById("browser-list");
   if (!container) return;
 
+  const data = JSON.parse(localStorage.getItem("@SetupHub:Navegadores"));
+
   if (!SoftwareService.isInitialized) {
     container.innerHTML = `
       <section class="bg-white border-bottom pb-4 pt-4 mb-4">
@@ -24,12 +26,24 @@ async function renderBrowserCategory() {
   }
 
   // getByCategory vai dar um await global
-  const softwares = await SoftwareService.getByCategory("Navegadores");
-  console.log(softwares);
+  if (!data) {
+    const softwares = await SoftwareService.getByCategory("Navegadores");
+    container.innerHTML = "";
+
+    softwares.forEach((software) => {
+      const card = CardRenderer.render(software);
+      container.appendChild(card);
+    });
+
+    await localStorage.setItem(
+      "@SetupHub:Navegadores",
+      JSON.stringify(softwares),
+    );
+  }
 
   container.innerHTML = "";
 
-  softwares.forEach((software) => {
+  data.forEach((software) => {
     const card = CardRenderer.render(software);
     container.appendChild(card);
   });

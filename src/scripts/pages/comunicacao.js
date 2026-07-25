@@ -5,6 +5,9 @@ async function renderComunicationCategory() {
   const container = document.getElementById("comunication-list");
   if (!container) return;
 
+  const data = JSON.parse(localStorage.getItem("@SetupHub:Comunicação"));
+  console.log("NAVEGADORES", data);
+
   if (!SoftwareService.isInitialized) {
     container.innerHTML = `
       <section class="bg-white border-bottom pb-4 pt-4 mb-4">
@@ -24,12 +27,24 @@ async function renderComunicationCategory() {
   }
 
   // getByCategory vai dar um await global
-  const softwares = await SoftwareService.getByCategory("Comunicação");
-  console.log(softwares);
+  if (!data) {
+    const softwares = await SoftwareService.getByCategory("Comunicação");
+    container.innerHTML = "";
+
+    softwares.forEach((software) => {
+      const card = CardRenderer.render(software);
+      container.appendChild(card);
+    });
+
+    await localStorage.setItem(
+      "@SetupHub:Comunicação",
+      JSON.stringify(softwares),
+    );
+  }
 
   container.innerHTML = "";
 
-  softwares.forEach((software) => {
+  data.forEach((software) => {
     const card = CardRenderer.render(software);
     container.appendChild(card);
   });

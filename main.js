@@ -1,6 +1,7 @@
 import { app, BrowserWindow, ipcMain } from "electron";
 import { fileURLToPath } from "url";
 import path from "path";
+import fs from "node:fs";
 
 // Recriando as variáveis que sumiram
 const __filename = fileURLToPath(import.meta.url);
@@ -26,7 +27,8 @@ const createWindow = () => {
 };
 
 ipcMain.handle("software:getAll", async () => {
-  return await SoftwareRepository.getAll();
+  const data = await SoftwareRepository.getAll();
+  return data;
 });
 ipcMain.handle("software:getStatus", async () => {
   return await WingetService.listInstalled();

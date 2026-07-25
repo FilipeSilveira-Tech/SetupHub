@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   await SoftwareService.initPromise;
 
   const searchInput = document.getElementById("search-input");
-  const mainContainer = document.querySelector(".row"); // Ou o ID da sua row
+  const mainContainer = document.querySelector(".container"); // Ou o ID da sua row
 
   searchInput.addEventListener("input", async (e) => {
     const term = e.target.value;

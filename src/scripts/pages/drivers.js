@@ -5,6 +5,8 @@ async function renderDriversCategory() {
   const container = document.getElementById("drivers-list");
   if (!container) return;
 
+  const data = JSON.parse(localStorage.getItem("@SetupHub:Drivers"));
+
   if (!SoftwareService.isInitialized) {
     container.innerHTML = `
       <section class="bg-white border-bottom pb-4 pt-4 mb-4">
@@ -24,12 +26,21 @@ async function renderDriversCategory() {
   }
 
   // getByCategory vai dar um await global
-  const softwares = await SoftwareService.getByCategory("Drivers");
-  console.log(softwares);
+  if (!data) {
+    const softwares = await SoftwareService.getByCategory("Drivers");
+    container.innerHTML = "";
+
+    softwares.forEach((software) => {
+      const card = CardRenderer.render(software);
+      container.appendChild(card);
+    });
+
+    await localStorage.setItem("@SetupHub:Drivers", JSON.stringify(softwares));
+  }
 
   container.innerHTML = "";
 
-  softwares.forEach((software) => {
+  data.forEach((software) => {
     const card = CardRenderer.render(software);
     container.appendChild(card);
   });

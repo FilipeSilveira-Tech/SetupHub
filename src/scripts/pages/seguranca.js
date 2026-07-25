@@ -5,6 +5,8 @@ async function renderSegurancaCategory() {
   const container = document.getElementById("seguranca-list");
   if (!container) return;
 
+  const data = JSON.parse(localStorage.getItem("@SetupHub:Segurança"));
+
   if (!SoftwareService.isInitialized) {
     container.innerHTML = `
       <section class="bg-white border-bottom pb-4 pt-4 mb-4">
@@ -24,12 +26,24 @@ async function renderSegurancaCategory() {
   }
 
   // getByCategory vai dar um await global
-  const softwares = await SoftwareService.getByCategory("Segurança");
-  console.log(softwares);
+  if (!data) {
+    const softwares = await SoftwareService.getByCategory("Segurança");
+    container.innerHTML = "";
+
+    softwares.forEach((software) => {
+      const card = CardRenderer.render(software);
+      container.appendChild(card);
+    });
+
+    await localStorage.setItem(
+      "@SetupHub:Segurança",
+      JSON.stringify(softwares),
+    );
+  }
 
   container.innerHTML = "";
 
-  softwares.forEach((software) => {
+  data.forEach((software) => {
     const card = CardRenderer.render(software);
     container.appendChild(card);
   });
