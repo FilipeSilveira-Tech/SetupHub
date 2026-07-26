@@ -3,7 +3,7 @@
   "nome": "Audacity",
   "categoria": "Multimídia",
   "descricao": "Editor e gravador de áudio gratuito e de código aberto. É uma das ferramentas mais populares para cortar músicas, remover ruídos de gravações e editar podcasts de forma rápida e direta.",
-  "icone": "../../src/assets/icon/multimidia/audacity.svg",
+  "icone": "src/assets/icon/multimidia/audacity.svg",
   "wingetId": "Audacity.Audacity",
   "githubRepo": "audacity/audacity"
 }

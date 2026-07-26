@@ -3,7 +3,7 @@
   "nome": "7-Zip",
   "categoria": "Compactadores",
   "descricao": "Compactador e descompactador de arquivos gratuito, de código aberto e extremamente leve. É famoso por ter seu formato próprio (.7z), que oferece uma das maiores taxas de compressão do mercado.",
-  "icone": "../../src/assets/icon/compactadores/7-zip.svg",
+  "icone": "src/assets/icon/compactadores/7-zip.svg",
   "wingetId": "7zip.7zip",
   "githubRepo": null
 }

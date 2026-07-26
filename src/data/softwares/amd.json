@@ -3,7 +3,7 @@
   "nome": "AMD Software: Adrenalin Edition",
   "categoria": "Drivers",
   "descricao": "Central de drivers e utilitário para processadores e placas de vídeo Radeon. Além de manter o sistema estável, oferece ferramentas integradas para gravação de tela, monitoramento de desempenho e otimização de jogos em um só clique.",
-  "icone": "../../src/assets/icon/drivers/amd.svg",
+  "icone": "src/assets/icon/drivers/amd.svg",
   "wingetId": "AMD.Adrenalin",
   "githubRepo": null
 }

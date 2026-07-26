@@ -3,7 +3,7 @@
   "nome": "Adobe Acrobat Reader",
   "categoria": "Produtividade",
   "descricao": "O software padrão e mais popular do mercado para visualizar, imprimir, assinar e fazer anotações básicas em arquivos no formato PDF.",
-  "icone": "../../src/assets/icon/produtividade/adobe-reader.svg",
+  "icone": "src/assets/icon/produtividade/adobe-reader.svg",
   "wingetId": "Adobe.Acrobat.Reader.64-bit",
   "githubRepo": null
 }

@@ -3,7 +3,7 @@
   "nome": "Riot Client",
   "categoria": "Jogos",
   "descricao": "Centralizador focado nos jogos competitivos da empresa Riot Games, como League of Legends, Valorante, Teamfight.",
-  "icone": "../../src/assets/icon/jogos/riot.svg",
+  "icone": "src/assets/icon/jogos/riot.svg",
   "wingetId": "RiotGames.RiotClient",
   "githubRepo": null
 }

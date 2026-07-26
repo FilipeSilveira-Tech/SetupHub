@@ -1,24 +1,21 @@
 import SoftwareService from "../services/SoftwareService.js";
+import CardRenderer from "../render/CardRenderer.js";
 
 document.addEventListener("DOMContentLoaded", async () => {
   console.log("[SETUPHUB] Aplicativo inicializado. Carregando dados...");
 
   // function moreOneHours(ISOTimestamp) {
   //   if (!ISOTimestamp) return true;
-
   //   const dataTimestamp = new Date(ISOTimestamp).getTime();
-
   //   if (isNaN(dataTimestamp)) return true;
-
   //   const now = Date.now();
   //   const ONE_HOURS_MS = 60 * 60 * 1000; // 3.600.000 ms
-
   //   console.log("Diferença de minutos: ", (now - dataTimestamp) / 1000 / 60);
-
   //   return now - dataTimestamp > ONE_HOURS_MS;
   // }
 
   async function SoftwaresByCategory(data) {
+    const allData = data;
     const navegadores = data.filter(
       (software) => software.categoria === "Navegadores",
     );
@@ -49,6 +46,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     const fontes = data.filter((software) => software.categoria === "Fontes");
 
     return {
+      allData,
       navegadores,
       comunicatao,
       desenvolvimento,
@@ -65,7 +63,6 @@ document.addEventListener("DOMContentLoaded", async () => {
   }
 
   const cacheStorage = localStorage.getItem("@SetupHub:AppsData");
-  // const lastUpdate = localStorage.getItem("@SetupHub:LastUpdate");
 
   if (!cacheStorage) {
     const data = await SoftwareService.initialize();
@@ -73,6 +70,7 @@ document.addEventListener("DOMContentLoaded", async () => {
       `[SetupHub] Todos os ${data.lenght} softwares foram carregados!`,
     );
     const {
+      allData,
       navegadores,
       comunicatao,
       desenvolvimento,
@@ -87,6 +85,10 @@ document.addEventListener("DOMContentLoaded", async () => {
       fontes,
     } = await SoftwaresByCategory(data);
 
+    await localStorage.setItem(
+      "@SetupHub:AllSoftwares",
+      JSON.stringify(allData),
+    );
     await localStorage.setItem(
       "@SetupHub:Navegadores",
       JSON.stringify(navegadores),
@@ -129,67 +131,34 @@ document.addEventListener("DOMContentLoaded", async () => {
     );
     console.log("[NO CACHE] Cache gravado com sucesso!");
   }
+});
 
-  // if (moreOneHours(lastUpdate)) {
-  //   const data = await SoftwareService.initialize();
-  //   console.log(
-  //     `[SetupHub] Todos os ${data.lenght} softwares foram carregados!`,
-  //   );
+const rowContainer = document.querySelector("#row-container");
+const rowContainerDefault = rowContainer.innerHTML;
 
-  //   const {
-  //     navegadores,
-  //     comunicatao,
-  //     desenvolvimento,
-  //     ides,
-  //     produtividade,
-  //     multimida,
-  //     jogos,
-  //     compactadores,
-  //     utilitarios,
-  //     drivers,
-  //     seguranca,
-  //     fontes,
-  //   } = await SoftwaresByCategory(data);
-  //   await localStorage.setItem(
-  //     "@SetupHub:Navegadores",
-  //     JSON.stringify(navegadores),
-  //   );
-  //   await localStorage.setItem(
-  //     "@SetupHub:Comunicação",
-  //     JSON.stringify(comunicatao),
-  //   );
-  //   await localStorage.setItem(
-  //     "@SetupHub:Desenvolvimento",
-  //     JSON.stringify(desenvolvimento),
-  //   );
-  //   await localStorage.setItem("@SetupHub:IDEs", JSON.stringify(ides));
-  //   await localStorage.setItem(
-  //     "@SetupHub:Produtividade",
-  //     JSON.stringify(produtividade),
-  //   );
-  //   await localStorage.setItem(
-  //     "@SetupHub:Multimídia",
-  //     JSON.stringify(multimida),
-  //   );
-  //   await localStorage.setItem("@SetupHub:Jogos", JSON.stringify(jogos));
-  //   await localStorage.setItem(
-  //     "@SetupHub:Compactadores",
-  //     JSON.stringify(compactadores),
-  //   );
-  //   await localStorage.setItem(
-  //     "@SetupHub:Utilitários",
-  //     JSON.stringify(utilitarios),
-  //   );
-  //   await localStorage.setItem("@SetupHub:Drivers", JSON.stringify(drivers));
-  //   await localStorage.setItem(
-  //     "@SetupHub:Segurança",
-  //     JSON.stringify(seguranca),
-  //   );
-  //   await localStorage.setItem("@SetupHub:Fontes", JSON.stringify(fontes));
-  //   await localStorage.setItem(
-  //     "@SetupHub:LastUpdate",
-  //     new Date().toISOString(),
-  //   );
-  //   console.log("[CACHE OUTDATED] Cache atualizado!");
-  // }
+const data = JSON.parse(localStorage.getItem("@SetupHub:AllSoftwares"));
+const cardContainer = document.querySelector("#row-container");
+const searchInput = document.querySelector("#searchSoftwares");
+
+const displaySoftwares = (softwares) => {
+  cardContainer.innerHTML = "";
+
+  softwares.forEach((software) => {
+    const card = CardRenderer.render(software);
+    cardContainer.appendChild(card);
+  });
+};
+
+searchInput.addEventListener("keyup", (e) => {
+  const searchTerm = e.target.value.trim();
+
+  if (searchTerm === "") {
+    rowContainer.innerHTML = rowContainerDefault;
+    return;
+  }
+
+  const search = data.filter((i) =>
+    i.nome.toLowerCase().includes(searchTerm.toLowerCase()),
+  );
+  displaySoftwares(search);
 });

@@ -3,7 +3,7 @@
   "nome": "OBS Studio",
   "categoria": "Multimídia",
   "descricao": "O software padrão da indústria para transmissão ao vivo (streaming) e gravação de tela. Gratuito e de código aberto, ele permite misturar áudio, vídeo, capturas de jogos e webcams em tempo real com alta performance.",
-  "icone": "../../src/assets/icon/multimidia/obs-studio.svg",
+  "icone": "src/assets/icon/multimidia/obs-studio.svg",
   "wingetId": "OBSProject.OBSStudio",
   "githubRepo": "obsproject/obs-studio"
 }

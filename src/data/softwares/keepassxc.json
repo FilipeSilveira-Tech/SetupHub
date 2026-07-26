@@ -3,7 +3,7 @@
   "nome": "KeePassXC",
   "categoria": "Segurança",
   "descricao": "Um gerenciador de senhas focado em privacidade total e de código aberto. Ao contrário dos serviços em nuvem, ele armazena suas senhas em um banco de dados criptografado 100% local e offline, controlado inteiramente por você.",
-  "icone": "../../src/assets/icon/seguranca/kee-pass-xc.svg",
+  "icone": "src/assets/icon/seguranca/kee-pass-xc.svg",
   "wingetId": "KeePassXC.KeePassXC",
   "githubRepo": "keepassxreboot/keepassxc"
 }

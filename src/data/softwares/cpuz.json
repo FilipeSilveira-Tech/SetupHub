@@ -3,7 +3,7 @@
   "nome": "CPU-Z",
   "categoria": "Utilitários",
   "descricao": "Ferramenta clássica de diagnóstico que mostra informações detalhadas sobre o hardware do computador. Ele exibe em tempo real o modelo do processador (CPU), placa-mãe, especificações da memória RAM e placa de vídeo.",
-  "icone": "../../src/assets/icon/utilitarios/cpu-z.svg",
+  "icone": "src/assets/icon/utilitarios/cpu-z.svg",
   "wingetId": "CPUID.CPU-Z",
   "githubRepo": null
 }

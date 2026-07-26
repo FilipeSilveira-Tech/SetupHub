@@ -3,7 +3,7 @@
   "nome": "Cascadia Code",
   "categoria": "Fontes",
   "descricao": "Criada pela Microsoft para ser a fonte padrão do Windows Terminal e do VS Code. Possui um visual moderno, suporte nativo a ligaduras tipográficas e foi desenhada especificamente para se alinhar à identidade visual das ferramentas de desenvolvimento modernas da empresa.",
-  "icone": "../../src/assets/icon/fontes/google-fonts.svg",
+  "icone": "src/assets/icon/fontes/google-fonts.svg",
   "wingetId": "Microsoft.CascadiaCode",
   "githubRepo": "microsoft/cascadia-code"
 }

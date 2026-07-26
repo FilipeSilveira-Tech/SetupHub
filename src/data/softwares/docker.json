@@ -3,7 +3,7 @@
   "nome": "Docker Desktop",
   "categoria": "Desenvolvimento",
   "descricao": "Plataforma de criação e gerencaimento de ambientes insolados em\"container\"",
-  "icone": "../../src/assets/icon/desenvolvimento/docker.svg",
+  "icone": "src/assets/icon/desenvolvimento/docker.svg",
   "wingetId": "Docker.DockerDesktop",
   "githubRepo": "docker/docker-desktop"
 }

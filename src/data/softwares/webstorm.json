@@ -3,7 +3,7 @@
   "nome": "WebStorm",
   "categoria": "IDEs",
   "descricao": "Criado pela JetBrain, mas focado especificamente em tecnologias Web, JavaScript e TypeScript. É a escolha ideal para desenvolvedores front-end que trabalham com frameworks modernos como React, Angular e Vue.js.",
-  "icone": "../../src/assets/icon/ides/webstorm.svg",
+  "icone": "src/assets/icon/ides/webstorm.svg",
   "wingetId": "JetBrains.WebStorm",
   "githubRepo": null
 }

@@ -63,13 +63,18 @@ class CardRenderer {
 
   static createIcon(software) {
     const icon = document.createElement("img");
-    icon.src = software.icone;
+
+    const cleanPath = software.icone.replace(/^(\.\.\/|\/)+/, "");
+    const isInsidePagesDir = window.location.pathname.includes("/pages/");
+    const relativePrefix = isInsidePagesDir ? "../../" : "";
+
+    icon.src = relativePrefix + cleanPath;
     icon.alt = software.nome;
     icon.width = 36;
     icon.height = 36;
-    // Previne quebra de imagem caso a URL falhe
+
     icon.onerror = () => {
-      icon.src = "https://via.placeholder.com/36?text=App";
+      icon.src = relativePrefix + "src/assets/iconError.png";
     };
     return icon;
   }

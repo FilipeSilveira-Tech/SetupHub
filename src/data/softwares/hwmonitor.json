@@ -3,7 +3,7 @@
   "nome": "HWMonitor",
   "categoria": "Utilitários",
   "descricao": "Um monitor de hardware em tempo real que acompanha as estatísticas vitais do PC. É ideal para verificar as temperaturas de operação, tensões elétricas e a velocidade de rotação das ventoinhas (coolers).",
-  "icone": "../../src/assets/icon/utilitarios/hw-monitor.svg",
+  "icone": "src/assets/icon/utilitarios/hw-monitor.svg",
   "wingetId": "CPUID.HWMonitor",
   "githubRepo": null
 }

@@ -3,7 +3,7 @@
   "nome": "SQLite",
   "categoria": "Desenvolvimento",
   "descricao": "Banco de dados relacional leve e local, que armazena informações em um único arquiov, dispensando servidores",
-  "icone": "../../src/assets/icon/desenvolvimento/sqlite.svg",
+  "icone": "src/assets/icon/desenvolvimento/sqlite.svg",
   "wingetId": "SQLite.SQLite",
   "githubRepo": null
 }

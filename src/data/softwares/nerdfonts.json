@@ -3,7 +3,7 @@
   "nome": "Nerd Fonts (Cascadia Code / CaskaydiaCove)",
   "categoria": "Fontes",
   "descricao": "Um projeto de código aberto que pega fontes populares (incluindo as três acima) e adiciona milhares de ícones e glifos a elas. É a escolha definitiva para quem deseja personalizar o terminal do sistema com símbolos de pastas, linguagens de programação e ícones de status de desenvolvedor.",
-  "icone": "../../src/assets/icon/fontes/google-fonts.svg",
+  "icone": "src/assets/icon/fontes/google-fonts.svg",
   "wingetId": "ryanoasis.nerdfonts.CaskaydiaCove",
   "githubRepo": "ryanoasis/nerd-fonts"
 }

@@ -3,7 +3,7 @@
   "nome": "Steam",
   "categoria": "Jogos",
   "descricao": "A maior, e mais antiga e mais popular plataforma de distribuição digital de jogos pra PC do mundo. É o padrão da industria, famosa por suas promoções massivas, e recusos comunitários.",
-  "icone": "../../src/assets/icon/jogos/steam.svg",
+  "icone": "src/assets/icon/jogos/steam.svg",
   "wingetId": "Valve.Steam",
   "githubRepo": null
 }

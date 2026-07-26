@@ -3,7 +3,7 @@
   "nome": "Bitwarden",
   "categoria": "Segurança",
   "descricao": "Um gerenciador de senhas moderno, seguro e de código aberto. Ele armazena e criptografa suas credenciais na nuvem, permitindo sincronizá-las e preenchê-las automaticamente em todos os seus dispositivos e navegadores.",
-  "icone": "../../src/assets/icon/seguranca/bitwarden.svg",
+  "icone": "src/assets/icon/seguranca/bitwarden.svg",
   "wingetId": "Bitwarden.Bitwarden",
   "githubRepo": "bitwarden/clients"
 }

@@ -3,7 +3,7 @@
   "nome": "Notepad++",
   "categoria": "IDEs",
   "descricao": "Um editor de texto e de código-fonte super leve e exclusivo para Windows. É a ferramenta perfeita para abrir arquivos rapidamente, fazer edições simples, visualiazar logs ou programar scrips pápidos.",
-  "icone": "../../src/assets/icon/ides/notepadplusplus.svg",
+  "icone": "src/assets/icon/ides/notepadplusplus.svg",
   "wingetId": "Notepad++.Notepad++",
   "githubRepo": "notepad-plus-plus/notepad-plus-plus"
 }

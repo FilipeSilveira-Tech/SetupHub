@@ -3,7 +3,7 @@
   "nome": "Insomnia",
   "categoria": "Desenvolvimento",
   "descricao": "Cliente de API focado em testar requisições HTTP, REST, GraphQl e gRPC",
-  "icone": "../../src/assets/icon/desenvolvimento/insomnia.svg",
+  "icone": "src/assets/icon/desenvolvimento/insomnia.svg",
   "wingetId": "Insomnia.Insomnia",
   "githubRepo": "Kong/insomnia"
 }

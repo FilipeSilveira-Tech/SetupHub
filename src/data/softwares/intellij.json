@@ -3,7 +3,7 @@
   "nome": "IntelliJ IDEA Community",
   "categoria": "IDEs",
   "descricao": "Desenvolvido pela JetBrains, é considerada a IDE de ponta para desenvolvimento de Java e Kotlin.",
-  "icone": "../../src/assets/icon/ides/intellij.svg",
+  "icone": "src/assets/icon/ides/intellij.svg",
   "wingetId": "JetBrains.IntelliJIDEA.Community",
   "githubRepo": null
 }

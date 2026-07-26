@@ -3,7 +3,7 @@
   "nome": "Fira Code",
   "categoria": "Fontes",
   "descricao": "Uma fonte monoespaçada e de código aberto famosa por introduzir ligaduras tipográficas para programadores. Ela transforma automaticamente sequências de caracteres comuns (como ->, != ou ===) em símbolos visuais únicos e contínuos, tornando a leitura do código muito mais limpa.",
-  "icone": "../../src/assets/icon/fontes/google-fonts.svg",
+  "icone": "src/assets/icon/fontes/google-fonts.svg",
   "wingetId": "Tonsky.FiraCode",
   "githubRepo": "tonsky/FiraCode"
 }

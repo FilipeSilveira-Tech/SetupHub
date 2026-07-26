@@ -3,7 +3,7 @@
   "nome": "Everything",
   "categoria": "Utilitários",
   "descricao": "Um motor de busca local extremamente rápido para Windows. Ele substitui a pesquisa padrão do sistema, encontrando instantaneamente qualquer arquivo ou pasta digitada no momento exato em que você escreve o nome.",
-  "icone": "../../src/assets/icon/utilitarios/everything.svg",
+  "icone": "src/assets/icon/utilitarios/everything.svg",
   "wingetId": "Voidtools.Everything",
   "githubRepo": null
 }

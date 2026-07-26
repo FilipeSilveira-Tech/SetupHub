@@ -3,7 +3,7 @@
   "nome": "Microsoft PowerToys",
   "categoria": "Produtividade",
   "descricao": "Um conjunto de utilitários gratuitos para Windows projetado para usuários avançados. Ele adiciona recursos extras ao sistema, como gerenciador de janelas personalizado (FancyZones), seletor de cores, renomeador em massa e atalhos rápidos.",
-  "icone": "../../src/assets/icon/produtividade/powertoys.svg",
+  "icone": "src/assets/icon/produtividade/powertoys.svg",
   "wingetId": "Microsoft.PowerToys",
   "githubRepo": "microsoft/PowerToys"
 }

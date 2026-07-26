@@ -3,7 +3,7 @@
   "nome": "Microsoft Teams",
   "categoria": "Comunicação",
   "descricao": "Plataforma unificada de comunicação e colaboração que integra chat, videoconferências, armazenamento de arquivos e tarefas em um único espaço de trabalho.",
-  "icone": "../../src/assets/icon/comunicacao/teams.svg",
+  "icone": "src/assets/icon/comunicacao/teams.svg",
   "wingetId": "Microsoft.Teams",
   "githubRepo": null
 }

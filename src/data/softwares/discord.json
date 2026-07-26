@@ -2,7 +2,7 @@
   "id": "discord",
   "nome": "Discord",
   "descricao": "Plataforma gratuita de comunicação que permite interagir por texto, voz e vídeo.",
-  "icone": "../../src/assets/icon/comunicacao/discord.svg",
+  "icone": "src/assets/icon/comunicacao/discord.svg",
   "categoria": "Comunicação",
   "wingetId": "Discord.Discord",
   "githubRepo": null

@@ -3,7 +3,7 @@
   "nome": "NVIDIA GeForce Experience",
   "categoria": "Drivers",
   "descricao": "O software complementar para usuários de placas de vídeo GeForce. Ele atualiza automaticamente os drivers de vídeo (Game Ready), otimiza as configurações gráficas dos jogos de acordo com o seu PC e gerencia recursos como o DLSS e filtros visuais.",
-  "icone": "../../src/assets/icon/drivers/nvidia.svg",
+  "icone": "src/assets/icon/drivers/nvidia.svg",
   "wingetId": "NVIDIA.GeForceExperience",
   "githubRepo": null
 }

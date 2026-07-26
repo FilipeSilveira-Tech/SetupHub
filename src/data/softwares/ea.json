@@ -3,7 +3,7 @@
   "nome": "EA App",
   "categoria": "Jogos",
   "descricao": "Plataforma oficial da Electronic Arts.",
-  "icone": "../../src/assets/icon/jogos/ea.svg",
+  "icone": "src/assets/icon/jogos/ea.svg",
   "wingetId": "ElectronicArts.EADesktop",
   "githubRepo": null
 }

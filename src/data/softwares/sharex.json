@@ -3,7 +3,7 @@
   "nome": "ShareX",
   "categoria": "Utilitários",
   "descricao": "Uma ferramenta de código aberto avançada para captura de tela (print) e gravação de vídeo ou GIFs da área de trabalho. Possui recursos automatizados, como uploads diretos para nuvem, leitor de QR code e ferramentas de edição integradas.",
-  "icone": "../../src/assets/icon/utilitarios/sharex.svg",
+  "icone": "src/assets/icon/utilitarios/sharex.svg",
   "wingetId": "ShareX.ShareX",
   "githubRepo": "ShareX/ShareX"
 }

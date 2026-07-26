@@ -3,7 +3,7 @@
   "nome": "CrystalDiskInfo",
   "categoria": "Utilitários",
   "descricao": "Utilitário focado em monitorar a saúde e a temperatura de HDs e SSDs. Ele lê os dados de diagnóstico dos discos (S.M.A.R.T.) para alertar o usuário caso o armazenamento corra risco de falha ou defeito.",
-  "icone": "../../src/assets/icon/utilitarios/crystal-disk-info.svg",
+  "icone": "src/assets/icon/utilitarios/crystal-disk-info.svg",
   "wingetId": "CrystalMarkSoftware.CrystalDiskInfo",
   "githubRepo": "hiyohiyo/CrystalDiskInfo"
 }
